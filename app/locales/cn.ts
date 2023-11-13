@@ -49,6 +49,7 @@ const cn = {
       next: "下一个聊天",
       prev: "上一个聊天",
       clear: "清除上下文",
+      blank: "Erase All Messages",
       del: "删除聊天",
     },
     InputActions: {

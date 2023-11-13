@@ -737,6 +737,16 @@ function _Chat() {
       chatStore.updateCurrentSession(
         (session) => (session.clearContextIndex = session.messages.length),
       ),
+    blank: () =>
+      chatStore.updateCurrentSession(
+        (session) => {
+          session.messages = [];
+          session.clearContextIndex = session.messages.length;
+          session.lastSummarizeIndex = session.messages.length;
+          session.memoryPrompt = "";
+          setHitBottom(true);
+        },
+      ),
     del: () => chatStore.deleteSession(chatStore.currentSessionIndex),
   });
 

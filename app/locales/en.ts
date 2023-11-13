@@ -51,6 +51,7 @@ const en: LocaleType = {
       next: "Next Chat",
       prev: "Previous Chat",
       clear: "Clear Context",
+      blank: "Erase All Messages",
       del: "Delete Chat",
     },
     InputActions: {
